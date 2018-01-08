@@ -1,5 +1,0 @@
-sub$dt<-strptime(paste(sub$Date,sub$Time),"%d/%m/%Y %H:%M:%S")
-png(file="Plot2", width=480, height=480)
-with(sub, plot(dt,Global_active_power, type="n", xlab=""))
-with(sub,lines(dt, Global_active_power, type="c"))
-dev.off()
